@@ -96,7 +96,21 @@ btn2.addEventListener("click",function(){
     btn2.style.color = "red"
     button.style.color = "black"
 })
-// light.addEventListener("click", function(){
-//     light.style.backgroundColor = "blue"
-// })
+light.addEventListener("click", function(){
+    light.style.backgroundColor = "blue"
+})
 
+// const imgone = document.querySelector(".imgone")
+// const imgtwo = document.querySelector(".imgtwo")
+// btnon.addEventListener("click",function(){
+//    imgone.style.display= "none" 
+//    imgtwo.style.display="block"
+//    btnon.style.color="red"
+//    btnoff.style.color="black"
+// })
+// btnoff.addEventListener("click",function(){
+//     imgtwo.style.display= "none" 
+//     imgone.style.display="block"
+//     btnon.style.color="red"
+//     btnoff.style.color="black"
+//  })
