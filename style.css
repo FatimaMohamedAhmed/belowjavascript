@@ -1,0 +1,17 @@
+.box-parent {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 28px;
+    padding: 20px 50px;
+}
+ .light-box{
+height: 300px;
+width: 300px;
+border-radius: 50%;
+border: 2px black solid;
+}
