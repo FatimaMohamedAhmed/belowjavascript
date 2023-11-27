@@ -82,23 +82,23 @@ console.log(student.name)
 // title.style.color = "green"
 // title.style.fontSize =  "30px"
 // bdy.style.backgroundColor = "blue"
-const light = document.querySelector(".light-box")
-const button = document.querySelector(".btn")
-const btn2 = document.querySelector(".btn2")
-button.addEventListener("click", function(){
-    button.style.color = "red"
-    btn2.style.color = "black"
-    light.style.backgroundColor = "yellow"
+// const light = document.querySelector(".light-box")
+// const button = document.querySelector(".btn")
+// const btn2 = document.querySelector(".btn2")
+// button.addEventListener("click", function(){
+//     button.style.color = "red"
+//     btn2.style.color = "black"
+//     light.style.backgroundColor = "yellow"
   
-})
-btn2.addEventListener("click",function(){
-    light.style.backgroundColor = "transparent"
-    btn2.style.color = "red"
-    button.style.color = "black"
-})
-light.addEventListener("click", function(){
-    light.style.backgroundColor = "blue"
-})
+// })
+// btn2.addEventListener("click",function(){
+//     light.style.backgroundColor = "transparent"
+//     btn2.style.color = "red"
+//     button.style.color = "black"
+// })
+// light.addEventListener("click", function(){
+//     light.style.backgroundColor = "blue"
+// })
 
 // const imgone = document.querySelector(".imgone")
 // const imgtwo = document.querySelector(".imgtwo")
@@ -110,7 +110,48 @@ light.addEventListener("click", function(){
 // })
 // btnoff.addEventListener("click",function(){
 //     imgtwo.style.display= "none" 
-//     imgone.style.display="block"
+//     imgone.style.display="block"/
 //     btnon.style.color="red"
 //     btnoff.style.color="black"
 //  })
+// const hdr = document.querySelector(".hdr")
+// hdr.style.backgroundColor ="blue"
+// hdr.style.color = "white"
+// hdr.style.fontSize = "2em";
+// const icon = document.querySelector("#icon")
+// icon.style.fontSize = "2em"
+// const menu = document.querySelector(".menu ul li")
+// menu.addEventListener("click", function(){
+//   icon.style.display = "block"
+//    menu.style.display = "none"
+   
+// })
+// icon.addEventListener("click", function(){
+//     icon.style.display = "none"
+//     menu.style.display = "block"
+// })
+
+// hdr.addEventListener("click",function(){
+    
+//     hdr.style.display = "none"
+//      icon.style.display = "block"
+    
+// })
+// hdr.addEventListener("click", function(){
+//     hdr.style.display = "block"
+//     icon.style.display = "none"
+// })
+ const iconbutton = document.querySelector("#iconbutton")
+ const links = document.querySelector("#links")
+ const icon = document.querySelector("#icon")
+ iconbutton.addEventListener("click", function(){
+     links.style.display = "flex"
+     icon.style.display = "block"
+     iconbutton.style.display = "none"
+ })
+ icon.addEventListener("click", function(){
+     links.style.display = "none"
+     icon.style.display = "none"
+     iconbutton.style.display = "block"
+ })
+    
