@@ -141,17 +141,51 @@ console.log(student.name)
 //     hdr.style.display = "block"
 //     icon.style.display = "none"
 // })
- const iconbutton = document.querySelector("#iconbutton")
- const links = document.querySelector("#links")
- const icon = document.querySelector("#icon")
- iconbutton.addEventListener("click", function(){
-     links.style.display = "flex"
-     icon.style.display = "block"
-     iconbutton.style.display = "none"
+//  const iconbutton = document.querySelector("#iconbutton")
+//  const links = document.querySelector("#links")
+//  const icon = document.querySelector("#icon")
+//  iconbutton.addEventListener("click", function(){
+//      links.style.display = "flex"
+//      icon.style.display = "block"
+//      iconbutton.style.display = "none"
+//  })
+//  icon.addEventListener("click", function(){
+//      links.style.display = "none"
+//      icon.style.display = "none"
+//      iconbutton.style.display = "block"
+//  })
+const value = document.querySelector("#value")
+ const Incrementbutton = document.querySelector("#Incrementbutton")
+ const Resetbutton = document.querySelector("#Resetbutton")
+  const Decrementbutton = document.querySelector("#Decrementbutton")
+ let startValue = 0
+ Incrementbutton.addEventListener("click", function(){
+     startValue++;
+     value.innerHTML = startValue
+     if(startValue == 10){
+         value.style.color ="red"
+     }
+    else{
+        value.style.color ="black"
+    }    
  })
- icon.addEventListener("click", function(){
-     links.style.display = "none"
-     icon.style.display = "none"
-     iconbutton.style.display = "block"
+ Resetbutton.addEventListener("click", function(){
+     startValue =0;
+     value.innerHTML = startValue
  })
+ Decrementbutton.addEventListener("click", function(){
+    if(startValue>0){
+        startValue --;
+        // value.textContent=startValue
+        value.innerHTML = startValue
+        if(startValue == 10){
+            value.style.color ="red"
+        }
+       else{
+           value.style.color ="black"
+       }    
     
+    }})
+ 
+
+   
